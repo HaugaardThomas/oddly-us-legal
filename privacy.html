@@ -66,15 +66,15 @@
 <p class="dates">Oddly Us · Effective 15 September 2026</p>
 
 <p class="lede">Oddly Us is a question-card app for two people sharing one phone. It has no
-accounts, no sign-up and no partner invitations. It never records, stores or transmits
-anything either of you says out loud.</p>
+accounts, no sign-up and no partner invitations.</p>
 
 <div class="plain">
 <h2>The short version</h2>
-<p><strong>Your answers are never collected.</strong> The app has no text field, no microphone
-access and no recording of any kind. What you say to each other stays between you.</p>
-<p><strong>Your reading progress stays on your phone.</strong> Which pack you are playing and
-how far through it you are never leave the device.</p>
+<p><strong>You can record your answers, and those recordings never leave your phone.</strong>
+The microphone runs only while you hold a recording open on a card. We cannot hear them, we
+cannot retrieve them, and they are not uploaded, analysed or transcribed.</p>
+<p><strong>Your reading progress stays on your phone</strong> too. Which pack you are playing
+and how far through it you are never leave the device.</p>
 <p><strong>We count a handful of anonymous events</strong> — such as "a card was viewed" or "a
 purchase completed" — so we can tell whether the app is working. These are not tied to your
 name, your email or your device's advertising identifier.</p>
@@ -101,9 +101,40 @@ restored when you restore a purchase.</p>
       open when you are offline.</li>
   <li>A note of which one-time events have already been counted, so opening the app twice is
       not counted as two new users.</li>
+  <li><strong>Every voice recording you make</strong>, as an audio file in the app's own
+      storage, along with which question it belongs to and how long it is.</li>
+  <li>Which questions you have hearted.</li>
 </ul>
 <p>Deleting the app removes all of it. We cannot recover it, and neither can you — which is why
 reinstalling starts your decks fresh even though your purchase can be restored.</p>
+
+<h2>Recording your answers</h2>
+<p>Each card has a microphone button. Tapping it records; tapping it again stops and saves that
+take against the question. This is entirely optional — the app is fully usable without ever
+recording anything, and nothing prompts you to.</p>
+<p>These are the most personal thing the app holds, so the handling is deliberately narrow:</p>
+<ul>
+  <li><strong>The recording never leaves your device.</strong> It is written to the app's
+      private storage and is never uploaded to us, to an analytics service, to a transcription
+      service, or to anyone else. There is no cloud copy and no backup on our side.</li>
+  <li><strong>We cannot hear it.</strong> There is no mechanism by which we could — not on
+      request, not with your permission, not by accident.</li>
+  <li><strong>Nothing is transcribed or analysed.</strong> No speech recognition runs over it.
+      No sentiment, tone or keyword is extracted. The app does not know what was said.</li>
+  <li><strong>The microphone is only live while a recording is open.</strong> It is not
+      listening in the background, between cards, or while the app is closed.</li>
+  <li><strong>No analytics event records that a recording happened</strong>, how long it was,
+      or which question it belonged to.</li>
+</ul>
+<p>iOS asks your permission the first time, and you can withdraw it at any point in
+<strong>Settings → Privacy &amp; Security → Microphone</strong>. Refusing costs you nothing but
+the recording feature.</p>
+<p>You can delete any recording from the Memories screen, which removes both the audio file and
+its entry. Deleting the app removes all of them at once. Because the audio sits in the app's
+storage, <strong>an iCloud or iTunes device backup may include it</strong> — that copy is
+governed by Apple and your own backup settings, not by us.</p>
+<p>Please be aware of the obvious: two people are recorded, not one. Make sure whoever is
+speaking is happy to be recorded before you tap the button.</p>
 
 <h2>What the app sends, and to whom</h2>
 
@@ -162,10 +193,10 @@ we do not ask it to collect your device's advertising identifier.</p>
 as it takes to answer you. Please do not include anything sensitive; a support email is not a
 secure channel.</p>
 
-<h2>What we never collect</h2>
+<h2>What we never receive</h2>
 <ul>
-  <li><strong>Anything either of you says.</strong> The app does not request microphone access
-      and has no field for typing an answer.</li>
+  <li><strong>Your recordings.</strong> They stay on the device, as described above.</li>
+  <li><strong>Anything typed.</strong> The app has no field for writing an answer down.</li>
   <li><strong>Your name, email address, phone number or date of birth.</strong> There is no
       account to create.</li>
   <li><strong>Your location.</strong> The app does not request location access, and we have
@@ -175,7 +206,8 @@ secure channel.</p>
       Transparency's "Allow app to track" prompt from Oddly Us. If you ever do, it is a bug —
       please tell us.</li>
   <li><strong>Your contacts, photos, calendar, health data or anything about your partner.</strong></li>
-  <li><strong>Which questions you answered or how you answered them.</strong></li>
+  <li><strong>Which questions you answered, how you answered them, or which you hearted.</strong>
+      Likes and recordings are on-device only and appear in no event we receive.</li>
 </ul>
 
 <h2>Why we are allowed to do this</h2>
@@ -192,7 +224,8 @@ require us to name a lawful basis for each use:</p>
 
 <h2>How long anything is kept</h2>
 <ul>
-  <li><strong>On your phone:</strong> until you delete the app.</li>
+  <li><strong>On your phone:</strong> until you delete the app, or delete an individual
+      recording from Memories. Recordings have no expiry and are never removed automatically.</li>
   <li><strong>Analytics events:</strong> retained by PostHog under our project's retention
       settings and deleted thereafter.</li>
   <li><strong>Purchase records:</strong> kept by RevenueCat and by Apple for as long as needed
@@ -240,8 +273,13 @@ believe a child has used the app and you would like us to look into it, write to
 
 <h2>Security</h2>
 <p>Data in transit to PostHog, RevenueCat and Apple is encrypted with HTTPS. Data on your phone
-is protected by iOS's own app sandbox and device encryption. No system is perfect, but the best
-protection here is structural: we hold very little, and none of it identifies you.</p>
+— recordings included — is protected by iOS's own app sandbox and device encryption, which
+means it is readable only by this app while your device is unlocked. No system is perfect, but
+the best protection here is structural: what we hold is very little, none of it identifies you,
+and the recordings are not among it.</p>
+<p>Anyone with your unlocked phone can open the app and play your recordings. If that matters
+to you, a device passcode and Face ID are the protection, and deleting a recording from
+Memories is permanent.</p>
 
 <h2>Changes to this policy</h2>
 <p>If we change what the app collects, we will update this page and change the effective date
@@ -253,7 +291,7 @@ to is the one in force when you used the app; this page always shows the current
 <a href="mailto:oddlyusapp@gmail.com">oddlyusapp@gmail.com</a>.</p>
 
 <footer>
-<p>Oddly Us · Privacy Policy v1.0 · Effective 15 September 2026 ·
+<p>Oddly Us · Privacy Policy v2.0 · Effective 15 September 2026 ·
 <a href="terms.html">Terms of Use</a></p>
 </footer>
 
