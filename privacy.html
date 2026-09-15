@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Oddly Us</title>
+<meta name="description" content="What Oddly Us collects, what it does not, and how to get in touch.">
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #FFFFFF;
+    --ground: #F5E3C7;
+    --ink: #34302F;
+    --supporting: #5C5450;
+    --rule: #E3D6C2;
+    --accent: #293F65;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 40px 24px 56px;
+  }
+  @media (min-width: 46rem) {
+    main { margin: 32px auto; border-radius: 24px; padding: 56px 56px 64px; }
+    body { padding: 0 16px; }
+  }
+  h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 8px; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; letter-spacing: -0.01em;
+    margin: 40px 0 12px; padding-top: 24px; border-top: 1px solid var(--rule);
+  }
+  h3 { font-size: 1rem; margin: 24px 0 8px; }
+  p, li { margin: 0 0 14px; }
+  ul { padding-left: 1.25em; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  .dates { color: var(--supporting); font-size: 0.9rem; margin-bottom: 32px; }
+  .lede { font-size: 1.1rem; }
+  .plain {
+    background: #FBF4E9; border: 1px solid var(--rule); border-radius: 16px;
+    padding: 20px 20px 8px; margin: 24px 0;
+  }
+  .plain p:last-child { margin-bottom: 12px; }
+  .plain h2 { margin-top: 0; padding-top: 0; border-top: 0; font-size: 1.05rem; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; }
+  footer { color: var(--supporting); font-size: 0.9rem; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--rule); }
+  .scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="dates">Oddly Us · Version 1.0 · Effective 15 September 2026</p>
+
+<p class="lede">Oddly Us is a question-card app for two people sharing one phone. It has no
+accounts, no sign-up and no partner invitations. It never records, stores or transmits
+anything either of you says out loud.</p>
+
+<div class="plain">
+<h2>The short version</h2>
+<p><strong>Your answers are never collected.</strong> The app has no text field, no microphone
+access and no recording of any kind. What you say to each other stays between you.</p>
+<p><strong>Your reading progress stays on your phone.</strong> Which pack you are playing and
+how far through it you are never leave the device.</p>
+<p><strong>We count a handful of anonymous events</strong> — such as "a card was viewed" or "a
+purchase completed" — so we can tell whether the app is working. These are not tied to your
+name, your email or your device's advertising identifier.</p>
+<p><strong>We do not track you across apps or websites</strong>, show ads, or sell anything
+about you to anyone.</p>
+</div>
+
+<h2>Who is responsible</h2>
+<p>Oddly Us is the publisher of this app and is responsible for the data described here. For
+anything on this page, including a request about your data, write to
+<a href="mailto:oddlyusapp@gmail.com">oddlyusapp@gmail.com</a>. We aim to reply within 30 days.</p>
+
+<h2>What stays on your phone</h2>
+<p>The following is written to your device's local storage and is never sent to us or to
+anyone else. It is not backed up to a server, does not sync between devices, and is not
+restored when you restore a purchase.</p>
+<ul>
+  <li>Which deck you are currently playing.</li>
+  <li>For each deck you have started: the order its cards are in, where you are in it, how many
+      distinct cards you have seen, and whether you have finished it.</li>
+  <li>Whether you have finished or skipped the three-card how-to-play guide, and which step you
+      last saw.</li>
+  <li>A note of whether the App Store has confirmed your purchase, so the packs you own still
+      open when you are offline.</li>
+  <li>A note of which one-time events have already been counted, so opening the app twice is
+      not counted as two new users.</li>
+</ul>
+<p>Deleting the app removes all of it. We cannot recover it, and neither can you — which is why
+reinstalling starts your decks fresh even though your purchase can be restored.</p>
+
+<h2>What the app sends, and to whom</h2>
+
+<h3>Usage analytics — PostHog</h3>
+<p>We use <a href="https://posthog.com/" rel="noopener">PostHog</a> to count a small, fixed set
+of events. This is how we tell whether people who open the app actually start playing, and
+whether the purchase screen works. The complete list of events the app can send is:</p>
+<div class="scroll">
+<table>
+  <tr><th>Event</th><th>What travels with it</th></tr>
+  <tr><td>App opened for the first time</td><td>Nothing beyond the common properties below.</td></tr>
+  <tr><td>First card viewed</td><td>The deck's ID and the card's ID.</td></tr>
+  <tr><td>First question advanced</td><td>The deck's ID.</td></tr>
+  <tr><td>A deck was opened</td><td>The deck's ID.</td></tr>
+  <tr><td>The Starter Pack was completed</td><td>Nothing further.</td></tr>
+  <tr><td>Purchase screen viewed, purchase started, purchase completed</td><td>Which screen the offer was opened from.</td></tr>
+  <tr><td>Restore purchases finished</td><td>The outcome, and whether it was run from Settings or the offer.</td></tr>
+  <tr><td>The how-to-play guide was opened, stepped through, or left</td><td>Which of the three steps, and whether it was a first launch or a replay from Settings.</td></tr>
+</table>
+</div>
+<p>Card IDs are identifiers such as <code>starter_004</code>. <strong>The text of a question is
+never sent</strong>, and nothing records whether a question was answered, skipped, liked or
+disliked — the app has no way of knowing.</p>
+<p>PostHog also attaches, automatically:</p>
+<ul>
+  <li>A random identifier generated on your device the first time the app runs. It is not
+      derived from any hardware identifier, is not your Apple ID, and is not shared with any
+      other app. It is erased when you delete the app.</li>
+  <li>A session identifier that is regenerated every time the app launches.</li>
+  <li>The app's version and build number, its bundle identifier, your iOS version and a broad
+      device type such as "Mobile".</li>
+  <li>The time the event happened.</li>
+</ul>
+<p>PostHog's servers see the IP address your request arrives from, as any web server does. We
+have <strong>switched off PostHog's location lookup</strong>, so that address is not turned
+into a country, region or city on our events. We have also switched off session replay (no
+screen recording), error and crash capture, in-app surveys, and PostHog's user-profile feature,
+so no profile of you is built up over time. The app never calls PostHog's identify function,
+because there is nobody to identify.</p>
+<p>Event data is sent to PostHog Cloud EU and is stored in the European Union.</p>
+
+<h3>Purchases — RevenueCat and Apple</h3>
+<p>The one-time purchase that unlocks the five paid packs is handled by Apple. We never see,
+receive or store your card details, your billing address or your Apple ID.</p>
+<p>We use <a href="https://www.revenuecat.com/" rel="noopener">RevenueCat</a> to check with
+Apple whether a purchase is valid and still active — that check is the only thing that unlocks
+paid content. When you buy or restore, RevenueCat receives an anonymous app user ID it
+generates on your device, Apple's receipt for the transaction, your App Store country, and
+basic device and app version information. It does not receive your name or email address, and
+we do not ask it to collect your device's advertising identifier.</p>
+<p>Apple's own handling of your purchase is covered by
+<a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.</p>
+
+<h3>Support email</h3>
+<p>If you write to us, we receive whatever you put in the message, and we keep it only as long
+as it takes to answer you. Please do not include anything sensitive; a support email is not a
+secure channel.</p>
+
+<h2>What we never collect</h2>
+<ul>
+  <li><strong>Anything either of you says.</strong> The app does not request microphone access
+      and has no field for typing an answer.</li>
+  <li><strong>Your name, email address, phone number or date of birth.</strong> There is no
+      account to create.</li>
+  <li><strong>Your location.</strong> The app does not request location access, and we have
+      disabled the IP-based lookup that would otherwise infer a country.</li>
+  <li><strong>Your advertising identifier (IDFA).</strong> The app contains no advertising
+      SDK and does not ask for permission to track you. You should never see App Tracking
+      Transparency's "Allow app to track" prompt from Oddly Us. If you ever do, it is a bug —
+      please tell us.</li>
+  <li><strong>Your contacts, photos, calendar, health data or anything about your partner.</strong></li>
+  <li><strong>Which questions you answered or how you answered them.</strong></li>
+</ul>
+
+<h2>Why we are allowed to do this</h2>
+<p>If you are in the United Kingdom or the European Economic Area, the UK GDPR and the GDPR
+require us to name a lawful basis for each use:</p>
+<ul>
+  <li><strong>Purchases and restoring access</strong> — necessary to perform our contract with
+      you. Without checking the entitlement we cannot give you what you paid for.</li>
+  <li><strong>The small set of usage events</strong> — our legitimate interest in knowing
+      whether a new app functions and is worth continuing. We have kept this to a fixed list of
+      events with no profile, no location and no cross-app tracking specifically to keep that
+      interest from outweighing your privacy.</li>
+</ul>
+
+<h2>How long anything is kept</h2>
+<ul>
+  <li><strong>On your phone:</strong> until you delete the app.</li>
+  <li><strong>Analytics events:</strong> retained by PostHog under our project's retention
+      settings and deleted thereafter.</li>
+  <li><strong>Purchase records:</strong> kept by RevenueCat and by Apple for as long as needed
+      to support your purchase, handle refunds, and meet tax and accounting obligations.</li>
+  <li><strong>Support email:</strong> deleted once the conversation is finished.</li>
+</ul>
+
+<h2>Your rights, and one honest limitation</h2>
+<p>Depending on where you live, you may have the right to ask for a copy of your data, to have
+it corrected or deleted, to object to our use of it, or to complain to your data protection
+authority. In the UK that is the <a href="https://ico.org.uk/" rel="noopener">ICO</a>; in the
+EEA it is your national authority.</p>
+<p>There is a limitation you should know about, and it is a consequence of how little we
+collect. <strong>We have no way of connecting an analytics record to you as a person.</strong>
+There is no account, no email address and no device identifier on our side that we could match
+against a request from you. If you ask us to find or delete "your" data, we genuinely cannot
+locate it from your name or email alone, and the law does not require us to start collecting
+more information about you in order to be able to. We will not pretend otherwise.</p>
+<p>What you can do instead:</p>
+<ul>
+  <li><strong>Delete everything held on your device</strong> by deleting the app. That also
+      ends any further event collection, permanently, because the random identifier goes with
+      it.</li>
+  <li><strong>Ask us about your purchase.</strong> Purchase records can be found from your
+      App Store receipt, so write to us and we will help.</li>
+  <li><strong>Ask us anything about this policy</strong> at
+      <a href="mailto:oddlyusapp@gmail.com">oddlyusapp@gmail.com</a>, and we will answer.</li>
+</ul>
+
+<h2>Selling and sharing</h2>
+<p>We do not sell personal information, and we do not share it for cross-context behavioural
+advertising, as those terms are used in California's CCPA/CPRA. We have never done so. We share
+data only with the two service providers named above, each of which processes it on our
+instructions and for no purpose of their own.</p>
+
+<h2>International transfers</h2>
+<p>Analytics data is stored in the European Union. RevenueCat and Apple operate internationally
+and may process purchase data outside your country, under the safeguards described in their own
+privacy policies.</p>
+
+<h2>Children</h2>
+<p>Oddly Us is written for adult couples and is not directed at children. We do not knowingly
+collect data from anyone under 13, or under 16 in regions where that is the threshold. If you
+believe a child has used the app and you would like us to look into it, write to us.</p>
+
+<h2>Security</h2>
+<p>Data in transit to PostHog, RevenueCat and Apple is encrypted with HTTPS. Data on your phone
+is protected by iOS's own app sandbox and device encryption. No system is perfect, but the best
+protection here is structural: we hold very little, and none of it identifies you.</p>
+
+<h2>Changes to this policy</h2>
+<p>If we change what the app collects, we will update this page and change the effective date
+at the top. Material changes will be noted in the app's release notes. The version you agreed
+to is the one in force when you used the app; this page always shows the current one.</p>
+
+<h2>Contact</h2>
+<p>Questions, corrections or complaints:
+<a href="mailto:oddlyusapp@gmail.com">oddlyusapp@gmail.com</a>.</p>
+
+<footer>
+<p>Oddly Us · Privacy Policy v1.0 · Effective 15 September 2026</p>
+</footer>
+
+</main>
+</body>
+</html>
